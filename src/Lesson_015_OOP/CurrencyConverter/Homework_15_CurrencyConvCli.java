@@ -1,4 +1,4 @@
-package Lesson_015_OOP;
+package Lesson_015_OOP.CurrencyConverter;
 
 import java.util.Scanner;
 public class Homework_15_CurrencyConvCli {
@@ -50,7 +50,7 @@ public class Homework_15_CurrencyConvCli {
 
         /* Testing corner
         //default converter
-        CurrencyConverter cc1 = new CurrencyConverter();
+        Lesson_015_OOP.CurrencyConverter.CurrencyConverter cc1 = new Lesson_015_OOP.CurrencyConverter.CurrencyConverter();
         //covert 200 USD in turkish lira
         cc1.convert(1,2, 200);
         //show currency list

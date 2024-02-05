@@ -1,4 +1,4 @@
-package Lesson_015_OOP;
+package Lesson_015_OOP.CurrencyConverter;
 
 public class CurrencyConverter {
 
