@@ -1,7 +1,8 @@
-package Lesson_015_OOP.CurrencyConverter;
+package Lesson_017_Incapsulation.CurrencyConverter;
 
 import java.util.Scanner;
-public class Homework_15_CurrencyConvCli {
+
+public class CurrencyConvCli {
     public static void main(String[] args) {
         //Adding Rubles, Canadian Dollars, Swiss Francs, Pound Sterling to previous selection
         String[] currencies = new String[] {"EUR", "USD", "TL", "RUB", "CAD", "SWF", "GBP"};
