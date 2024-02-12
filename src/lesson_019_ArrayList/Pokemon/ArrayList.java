@@ -3,18 +3,18 @@ package lesson_019_ArrayList.Pokemon;
 public class ArrayList {
     //ATTRIBUTES
 
-    private static int default_size = 5;
+    private static int defaultSize = 5;
 
     private Pokemon[] team;
 
     private int count;
 
-    public static int getDefault_size() {
-        return default_size;
+    public static int getDefaultSize() {
+        return defaultSize;
     }
 
-    public static void setDefault_size(int default_size) {
-        ArrayList.default_size = default_size;
+    public static void setDefaultSize(int defaultSize) {
+        ArrayList.defaultSize = defaultSize;
     }
 
     public Pokemon[] getTeam() {
@@ -36,7 +36,7 @@ public class ArrayList {
     //CONSTRUCTORS - with nothing and with provided list length
 
     public ArrayList() {
-        this.team = new Pokemon[default_size];
+        this.team = new Pokemon[defaultSize];
         this.count = 0;
     }
 
