@@ -101,16 +101,16 @@ class ArrayList {
             setCount(getCount()+1);
             this.data = tempArray2;
             return;
-            //return new ArrayList(tempArray2);
+            //return new PokemonTeam(tempArray2);
         }
         System.out.println("Element "+value+" added!");
         //return new array
         this.data = tempArray;
-        //return new ArrayList(tempArray);
+        //return new PokemonTeam(tempArray);
     }
 
     public void removeByIndex(int a) {
-        System.out.println("Removing the "+a+"th element of the ArrayList");
+        System.out.println("Removing the "+a+"th element of the PokemonTeam");
         getData()[a] = 0;
         setCount(countElements(getData()));
     }

@@ -5,6 +5,16 @@ public class Main {
         int[] array = new int[] {25,47,98,85,36,21,57};
         int[] array2 = new int[] {25,47,98,0,36,0,57};
 
+        System.out.println("This is array");
+        for (int a : array) {
+            System.out.print(" "+a+" ");
+        }
+        System.out.println("");
+        System.out.println("This is array 2");
+        for (int b : array2) {
+            System.out.print(" "+b+" ");
+        }
+
         ArrayList list1 = new ArrayList();
         list1.showList();
         ArrayList list2 = new ArrayList(array);
