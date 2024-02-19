@@ -1,5 +1,6 @@
 package lesson_021_Junit.Pokemon;
 
+
 public class Pokemon {
 
     //Attributes

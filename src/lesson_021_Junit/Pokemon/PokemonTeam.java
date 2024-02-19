@@ -83,7 +83,11 @@ public class PokemonTeam {
     //Show List
     public void teamIntro() {
         for (int i = 0; i<this.team.length; i++ ) {
-            this.team[i].displayPokemon();
+            if (this.team[i]!=null) {
+                this.team[i].displayPokemon();
+            } else {
+                System.out.println("Slot "+i+" is empty");
+            }
         }
     }
 
