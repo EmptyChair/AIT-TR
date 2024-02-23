@@ -33,15 +33,18 @@ public class Bookshelf {
             this.index = 0;
         }
 
-        public void checkBookshelf() {
-            System.out.println(books.get(index).toString());
+        public Book checkBookshelf() {
+            //System.out.println(books.get(index));
             if (this.index+1<books.size()) {
+                System.out.println("Iterator gives you the book number "+this.index+", then moves forward");
                 this.index++;
-                System.out.println("Iterator moves forward");
+                return books.get(index-1);
             } else {
+                System.out.println("Iterator gives you the book number "+this.index+", then circles back to the beginning");
                 this.index = 0;
-                System.out.println("Iterator circles back to the beginning");
+                return books.get(books.size()-1);
             }
+
 
         }
     }
@@ -62,6 +65,10 @@ public class Bookshelf {
             System.out.println(b);
         }
         System.out.println("__________________________________________");
+    }
+
+    public int getSize(){
+        return this.books.size();
     }
 
 

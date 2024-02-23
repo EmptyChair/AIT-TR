@@ -18,15 +18,17 @@ public class BookshelfMain {
 
         System.out.println("Create Iterator");
         Bookshelf.Iterator myIterator = bookshelf1.new Iterator();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
-        myIterator.checkBookshelf();
+        System.out.println("Run through all the books with Iterator");
+
+        for (int i = 0; i<bookshelf1.getSize();i++)
+            System.out.println("It is "+myIterator.checkBookshelf());
+
+        System.out.println("_______________________________________________________");
+        System.out.println("Run through 7 the books with Iterator");
+
+        for (int i = 0; i< 7;i++)
+            System.out.println(myIterator.checkBookshelf());
+
 
 
 
