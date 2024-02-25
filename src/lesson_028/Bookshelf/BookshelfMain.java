@@ -3,7 +3,11 @@ package lesson_028.Bookshelf;
 
 public class BookshelfMain {
     public static void main(String[] args) {
-        //create Bookshelf
+        //create a Bookshelf
+        //add a few books
+        //remove one book
+        //Let iterator show all the books on the shelf
+
         Bookshelf bookshelf1 = new Bookshelf();
         bookshelf1.addBook("Fate of a Man", "Mikhail Sholokhov", 1956);
         bookshelf1.addBook("Fate of a Man", "Mikhail Sholokhov", 1956);
@@ -28,13 +32,6 @@ public class BookshelfMain {
 
         for (int i = 0; i< 7;i++)
             System.out.println(myIterator.checkBookshelf());
-
-
-
-
-        //add a few books
-        //remove one book
-        //Let itrator show all the books on the shelf
 
     }
 }
