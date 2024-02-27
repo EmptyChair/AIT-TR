@@ -45,19 +45,26 @@ public class DoubleLinkNode {
         this.prev = null;
     }
 
+    /*
     public void addNextNode(DoubleLinkNode next) {
         this.next = next;
-        if (next.prev==null) {
+        //if next's previous is not this node - make it this node
+        //ADD EQUALS METHOD TO WORK!!!
+        if (!next.prev.same(this)) {
             next.addPrevNode(this);
         }
     }
 
     public void addPrevNode(DoubleLinkNode prev) {
         this.prev = prev;
-        if (prev.next==null) {
+        //if next's previous is not this node - make it this node
+        //ADD EQUALS METHOD TO WORK!!!
+        if (!prev.next.same(this)) {
             prev.addNextNode(this);
         }
     }
+
+
 
     public void addFirstNode(DoubleLinkNode first) {
         if (this.prev!=null) {
@@ -75,6 +82,8 @@ public class DoubleLinkNode {
             this.removeNextNode();
         }
     }
+
+
 
     public void removeLastNode() {
         if (this.next!=null) {
@@ -124,6 +133,19 @@ public class DoubleLinkNode {
             this.next.runDownList();
         }
     }
+
+     */
+
+    /*
+    public boolean same(DoubleLinkNode node) {
+        boolean answer = false;
+        if ((this.data == node.data) && (this.next == node.next) && (this.prev == node.prev))
+            answer = true;
+
+        return answer;
+    }
+
+     */
 
 
 }

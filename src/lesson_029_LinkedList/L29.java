@@ -4,6 +4,9 @@ package lesson_029_LinkedList;
 
 public class L29 {
     public static void main(String[] args) {
+
+        /*
+
         //TESTING SINGLY LINKED LISTS
         OneLinkNode N1 = new OneLinkNode(24);
         OneLinkNode N2 = new OneLinkNode(52);
@@ -24,11 +27,17 @@ public class L29 {
         DoubleLinkNode N32 = new DoubleLinkNode(5);
         DoubleLinkNode N33 = new DoubleLinkNode(33);
         DoubleLinkNode N34 = new DoubleLinkNode(34);
+
         System.out.println("Build a chain out of them");
         N10.addNextNode(N20);
         N20.addNextNode(N30);
         N30.addNextNode(N31);
         N31.addNextNode(N32);
+        System.out.println("Compare node 31 with themselves");
+        System.out.println(N31.same(N31));
+
+
+
         System.out.println("Show the chain by asking the middle node");
         N30.showNodeList();
         System.out.println("Add node 33 at the beginning");
@@ -54,6 +63,8 @@ public class L29 {
         System.out.println("Test Doubly Linked ToString");
         System.out.println(N20.toString());
 
+
+         */
 
     }
 }
