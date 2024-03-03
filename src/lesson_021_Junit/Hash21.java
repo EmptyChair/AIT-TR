@@ -4,7 +4,7 @@ import lesson_021_Junit.Pokemon.PokemonTeam;
 import lesson_021_Junit.Pokemon.Pokemon;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-public class Main21 {
+public class Hash21 {
     @Test
     public void Main21() {
         //import Java Unit Test

@@ -77,7 +77,7 @@ public class ArrayList {
         }
     }
 
-    //Show List
+    //Show AList
     public void teamIntro() {
         for (int i = 0; i<this.team.length; i++ ) {
             this.team[i].displayPokemon();

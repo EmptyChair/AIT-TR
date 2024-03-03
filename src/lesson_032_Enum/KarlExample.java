@@ -162,7 +162,7 @@ class MySeasonK {
 
 /*
 
-class Main {
+class Hash {
 
     public static void main(String[] args) {
 

@@ -70,10 +70,10 @@ class ArrayList {
     }
 
 
-    //SHOW List
+    //SHOW AList
 
     public void showList() {
-        System.out.println("The List is as following: "+Arrays.toString(getData()));
+        System.out.println("The AList is as following: "+Arrays.toString(getData()));
         System.out.println("Its length is "+getCount());
     }
 

@@ -1,6 +1,6 @@
 package lesson_021_Junit.Pokemon;
 
-//An Array List implementation for teams of Pokemon
+//An Array AList implementation for teams of Pokemon
 
 public class PokemonTeam {
 
@@ -80,7 +80,7 @@ public class PokemonTeam {
         }
     }
 
-    //Show List
+    //Show AList
     public void teamIntro() {
         for (int i = 0; i<this.team.length; i++ ) {
             if (this.team[i]!=null) {
