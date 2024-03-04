@@ -1,11 +1,11 @@
-package lesson_024_objectAndString.people;
+package lesson_024_objectAndString.Hausaufgabe.people;
 
 public class Human {
 
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
-    private String gender;
+    protected String gender;
 
     ///SETTERS GETTERS
 
@@ -50,4 +50,14 @@ public class Human {
         String a = new String(getName()+" is a human of an unknown gender who is "+getAge()+" years old.");
         return a;
     }
+
+    public void greet() {
+        System.out.println("Hello.");
+    }
+
+    public void activity() {
+        System.out.println("This person is doing something.");
+        System.out.println("It's very suspicious.");
+    }
+
 }

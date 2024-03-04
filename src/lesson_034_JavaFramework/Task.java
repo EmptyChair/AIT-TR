@@ -1,4 +1,4 @@
-package lesson_034;
+package lesson_034_JavaFramework;
 
 import java.util.Objects;
 
@@ -44,5 +44,10 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(id, title);
+    }
+
+    @Override
+    public String toString() {
+        return "ID ["+id+"] , title "+title+".";
     }
 }

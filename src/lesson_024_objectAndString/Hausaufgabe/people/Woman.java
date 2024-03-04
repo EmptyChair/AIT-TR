@@ -1,8 +1,8 @@
-package lesson_024_objectAndString.people;
+package lesson_024_objectAndString.Hausaufgabe.people;
 
 public class Woman extends Human {
 
-    private String hair;
+    protected String hair;
 
     public String getHair() {
         return hair;
@@ -25,9 +25,19 @@ public class Woman extends Human {
         setGender("female");
     }
 
+    @Override
     public String toString() {
         String a = new String(getName()+" is a woman with "+getHair()+" hair. It is impolite to ask her about her age (but it is "+getAge()+" actually).");
         return a;
+    }
+
+    @Override
+    public void greet() {
+        System.out.println("Hello, my name is "+this.name+".");
+    }
+
+    public void preen() {
+        System.out.println(this.name+" is preening for five minutes. She is now pretty.");
     }
 
 }

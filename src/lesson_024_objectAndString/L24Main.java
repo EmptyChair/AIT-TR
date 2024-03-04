@@ -8,7 +8,7 @@ public class L24Main {
         String str = "Hello"; // 1 String-type Object
         str = str + " World!"; // 1+2 =3 String objects
         str = str + " I'm Karl!"; // 3+2 String Objects
-        // not good, 5 onjects for a trivial task
+        // not good, 5 objects for a trivial task
         str = "Blast! "+str+" Bye!"; //5+4=9 String Objects, OMG!!!
         String str2 = str;
         str2 = str2 + " BAM!";

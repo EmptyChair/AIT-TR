@@ -1,4 +1,4 @@
-package lesson_034;
+package lesson_034_JavaFramework;
 
 import java.util.ArrayList;
 import java.util.Iterator;
