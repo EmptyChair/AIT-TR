@@ -60,4 +60,20 @@ public class Human {
         System.out.println("It's very suspicious.");
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        //same object
+        if (this == obj)
+            return true;
+        //wrong class
+        if (obj == null ||!(obj instanceof Human))
+            return false;
+        Human humie = (Human) obj;
+        return this.name.equals(humie.name) && this.age==humie.age && this.gender.equals(humie.gender);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode()+age*31+gender.hashCode();
+    }
 }

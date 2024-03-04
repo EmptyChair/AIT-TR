@@ -18,5 +18,10 @@ public class TransportUse {
         System.out.println(volga.toString());
         volga.honk(); //as it has no honk of its own, it uses Transport's honk
 
+        Transport t1 = null;
+        boolean state = ride.getClass() == t1.getClass();
+        System.out.println("Compare class of ride and t1 "+state);
+
+
     }
 }

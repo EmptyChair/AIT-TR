@@ -63,7 +63,7 @@ public class Animal {
             return true;
         }
         // if object is of another class - false
-        if (!(obj instanceof Animal)) {
+        if (obj == null || !(obj instanceof Animal)) {
             return false;
         }
         //cast obj as Animal and compare its attributes

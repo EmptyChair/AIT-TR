@@ -1,5 +1,7 @@
 package lesson_024_objectAndString.Hausaufgabe.transport;
 
+import java.util.Objects;
+
 public class Transport {
     protected String name;
     protected int passengerCapacity;
@@ -49,5 +51,20 @@ public class Transport {
 
     public void honk() {
         System.out.println("HONK-HONK");
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || this.getClass() != obj.getClass())
+            return false;
+        Transport transport = (Transport) obj;
+        return this.passengerCapacity == transport.passengerCapacity && this.name.equals(transport.name) && Objects.equals(this.transportType, transport.transportType);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode()+this.passengerCapacity*31+this.transportType.hashCode();
     }
 }
