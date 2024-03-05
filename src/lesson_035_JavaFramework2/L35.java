@@ -30,7 +30,6 @@ class NameComparator implements Comparator<Person> {
 
 
 
-
 public class L35 {
     public static void main(String[] args) {
         //COMPARE AND COMPARATOR
@@ -49,6 +48,7 @@ public class L35 {
         System.out.println("Compare rafik and rafik2 "+comparator1.compare(rafik, rafik2));
         System.out.println("Compare ivan and peter "+comparator1.compare(ivan, peter));
 
+        //why?
         List<Person> list = new ArrayList<>();
         list.sort((o1,o2) -> o1.age-o2.age);
         list.sort(comparator1);
