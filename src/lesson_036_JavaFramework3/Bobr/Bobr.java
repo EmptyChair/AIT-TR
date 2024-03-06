@@ -1,6 +1,7 @@
-package lesson_035_JavaFramework2.Bobr;
+package lesson_036_JavaFramework3.Bobr;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Bobr implements Comparable<Bobr> {
     private String name;
@@ -59,6 +60,21 @@ public class Bobr implements Comparable<Bobr> {
     public String toString() {
         //return this.getName().compareTo(beaver.getName());
         return this.name+", aged "+this.age+", "+this.relativesCount+" relatives.";
+    }
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode()*100+this.age*10+this.relativesCount;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+        Bobr bobr = (Bobr) obj;
+        return age == bobr.age && relativesCount == bobr.relativesCount && Objects.equals(name, bobr.name);
     }
 
 }
