@@ -43,13 +43,13 @@ public class MainZoo {
         Collections.sort(bobrList, new BobrRelativeCountComparator());
         System.out.println(bobrList);
         System.out.println("Sorting bobrList using Collections.sort and lambda expression comparator...");
-        //also a name sortrt
+        //also a name sorting
         bobrList.sort((o1,o2) -> o1.getName().compareTo(o2.getName()));
         System.out.println(bobrList);
 
         System.out.println("Creating map...");
         Map<String,Integer> bobrMap = new HashMap<>();
-        System.out.println("Adding breavers to map...");
+        System.out.println("Adding beavers to map...");
         for (Bobr x : bobrList) {
             bobrMap.put(x.getName(), x.getRelativesCount());
         }
