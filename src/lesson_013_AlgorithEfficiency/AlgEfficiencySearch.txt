@@ -1,0 +1,30 @@
+
+1. Linear Search
+    - worst case scenario: we look for the last (n-th) element
+    - hence the need to work through all elements (n comparisons)
+    - Efficiency: O(n)
+
+2. Binary Search
+    - worst case scenario: as we divide the array by middle, the element has to be not in the middle of array,
+    half array, quarter array...
+        - for example, the element NEAR the last (or first)
+        - hence the need to work through ever-smaller array size to the smallest possible array division possible: 1
+            - n -> n/2 -> n/4 -> ... 1
+        - ergo, Efficiency: O(log 2,n) or just O(log n)
+
+3. Selection Sort
+    - there is no worst case scenario!
+    - regardless of how the array is sorted, the selection sort will work diligently through n-1 sub-array, then
+    n-2 sub-array and so till very end.
+    - ergo, Efficiency: n+(n-1)+(n-2)...+1 or asymptotically : O(n^2)
+
+
+4. Merge Sort
+    - divide the n-sized array into smallest elements
+    - then create 2-element pairs and have each sorted
+    - then merge 4-element pairs and have them sorted
+    - repeat till n-sized array is re-assembled and sorted
+    - the worst case scenario is difficult to describe, but it includes all elements being distributed as
+     different to each others' neighbors as possible
+     - ergo: log (2,n) of "stages" (pairs to quarters to...) and n/2 comparisons in each stage
+     - thus worst case Efficiency: O(n/2*log(2,n)) or asymptotically: O(n*log(n))

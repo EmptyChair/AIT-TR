@@ -44,8 +44,6 @@ public class Bookshelf {
                 this.index = 0;
                 return books.get(books.size()-1);
             }
-
-
         }
     }
 
